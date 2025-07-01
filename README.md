@@ -5,15 +5,15 @@ Generate a retro 32 x 32 px "trainer sprite" from a picture.
 This Minimum Viable Product (MVP) combines a vision model (BLIP-2) that extracts coarse appearance features with a static pixel-art library layered together on the server-side.
 
 The REST API lets one do:
-1. **/predict** – upload an image → get JSON attributes  
-2. **/sprite**  – upload an image → get a composed PNG sprite
+1. **/predict** – upload an image to get JSON attributes  
+2. **/sprite**  – upload an image to get a composed PNG sprite
 
 
 ## Project Structure
 ```
 
 ├── api.py                    # FastAPI service (predict + sprite endpoints)
-├── feature_extractor.py     # BLIP-2 → JSON mapping
+├── feature_extractor.py     # BLIP-2 to get JSON mapping
 ├── sprite_composer_fixed.py # PNG layering logic (updated from mapping.py)
 ├── assets/                   # Static pixel art (see below)
 │   ├── base_body/
