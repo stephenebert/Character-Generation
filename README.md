@@ -105,12 +105,3 @@ curl -X POST -F "file=@selfie.jpg" http://127.0.0.1:8000/sprite --output trainer
 | v3 | Diffusion-based asset generation for unlimited variety |
 
 ---
-
-## Contributing
-
-Fork to feature branch to PR.
-
-- Run `black`, `isort`, and `ruff` before pushing
-- Keep assets under 1 MB; sprites should remain 32 × 32
-- Add tests for new feature extraction prompts
-- Update asset vocabulary when adding new categories
