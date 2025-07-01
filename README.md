@@ -59,24 +59,6 @@ All files share the **same canvas size and anchor (0, 0)** so the compositor can
 
 ---
 
-## Quick Start
-
-```bash
-# 1. Clone and set up a fresh environment
-git clone https://github.com/<your-org>/PixelTrainer.git
-cd PixelTrainer
-python -m venv .venv && source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# 2. Install runtime deps
-pip install -r requirements.txt
-#   PyTorch/torchvision will be installed based on your system automatically
-
-# 3. Run the API (hot reload in dev)
-uvicorn api:app --reload
-```
-
-Open http://127.0.0.1:8000/docs for an auto-generated Swagger UI where you can upload a selfie to `/sprite` and download the generated PNG.
-
 ## API Endpoints
 
 | Method | Route      | Payload       | Returns                                    |
